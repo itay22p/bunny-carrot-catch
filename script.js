@@ -38,6 +38,22 @@ document.addEventListener('keydown', (e) => {
 document.addEventListener('keyup', (e) => {
     if (['ArrowRight', 'ArrowLeft', 'Right', 'Left'].includes(e.key)) player.dx = 0;
 });
+// התחלת משחק בלחיצה
+document.addEventListener('keydown', () => {
+    if (gameOver) {
+        gameOver = false;
+        score = 0;
+        items = [];
+    }
+});
+
+document.addEventListener('click', () => {
+    if (gameOver) {
+        gameOver = false;
+        score = 0;
+        items = [];
+    }
+})
 
 // מקשי מגע
 const leftBtn = document.getElementById('leftBtn');
