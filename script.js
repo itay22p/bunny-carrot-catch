@@ -9,10 +9,10 @@ const images = {
     rock: new Image()
 };
 
-images.bg.src = 'images/background.png';
-images.rabbit.src = 'images/rabbit.png';
-images.carrot.src = 'images/carrot.png';
-images.rock.src = 'images/rock.png';
+images.bg.src = 'images/images/background.png';
+images.rabbit.src = 'images/images/rabbit.png';
+images.carrot.src = 'images/images/carrot.png';
+images.rock.src = 'images/images/rock.png';
 
 let score = 0;
 let highScore = localStorage.getItem('bunny_highScore') || 0;
