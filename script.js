@@ -16,6 +16,7 @@ images.rock.src = 'images/images/rock.png';
 
 let highScore = localStorage.getItem('bunny_highScore') || 0;
 let gameOver = false;
+let score = 0;
 
 const player = {
     x: canvas.width / 2 - 35,
